@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Layout from './Component/Layout'
 import Home from './Component/Home'
 import About from './Component/About'
@@ -7,7 +7,7 @@ import Contact from './Component/Contact'
 
 function App() {
   return (
-    <Router>
+  
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
@@ -15,7 +15,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Route>
       </Routes>
-    </Router>
+  
   );
 }
 
